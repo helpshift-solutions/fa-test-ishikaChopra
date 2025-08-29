@@ -52,6 +52,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
+          path: .
       
       - name: 'Run Azure Functions Action'
         uses: Azure/functions-action@v1
@@ -62,3 +63,4 @@ jobs:
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
 
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0082C68083474950B9A0BFFD62B5ED4E }}
+
