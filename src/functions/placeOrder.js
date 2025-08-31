@@ -47,6 +47,7 @@ app.http("placeOrder", {
     visibilityTimeout: 300 // 5 minutes = 300 seconds
   });
 
+    context.log(`order placed for ${item}`);
     return {
       status: 200,
       body: `✅ Order placed for ${item}`
