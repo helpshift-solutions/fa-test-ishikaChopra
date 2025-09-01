@@ -14,8 +14,5 @@
     "@azure/storage-queue": "^12.27.0",
     "busboy": "^1.6.0",
     "multiparty": "^4.2.3"
-  },
-  "devDependencies": {
-    "azure-functions-core-tools": "^4.2.2"
   }
 }
